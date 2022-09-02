@@ -2,35 +2,35 @@ puts "🌱 Seeding employees..."
 
 Employee.create([
   {
-    firstname: "Carl",
-    lastname: "Liza",
+    first: "Carl",
+    last: "Agesa",
     email: "allofus@moringaschool.com",
     location: "Nairobi"
   },
   {
-    firstname: "Laureen",
-    lastname: "Duane",
-    email: "allofus@moringaschool.com",
-    location: "Nairobi"
-
-  },
-  {
-    firstname: "Brooks",
-    lastname: "Liza",
+    first: "Laureen",
+    last: "Akinyi",
     email: "allofus@moringaschool.com",
     location: "Nairobi"
 
   },
   {
-    firstname: "Joseph",
-    lastname: "Duane",
+    first: "Brooks",
+    last: "Donald",
     email: "allofus@moringaschool.com",
     location: "Nairobi"
 
   },
   {
-    firstname: "Njoro",
-    lastname: "Liza",
+    first: "Joseph",
+    last: "Mbugua",
+    email: "allofus@moringaschool.com",
+    location: "Nairobi"
+
+  },
+  {
+    first: "Kelvin",
+    last: "Njoro",
     email: "allofus@moringaschool.com",
     location: "Nairobi"
 

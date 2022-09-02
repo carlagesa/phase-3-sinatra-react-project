@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_02_183633) do
+ActiveRecord::Schema.define(version: 2022_09_02_212901) do
 
   create_table "employees", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
+    t.string "first"
+    t.string "last"
     t.string "email"
     t.string "location"
   end

@@ -2,14 +2,34 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
-  get "/" do
-    { message: "Good luck with your project!" }.to_json
-  end
 
   get '/employees' do
     # get all the employees from the database
-    employees = Employee.all.order(:created_at)
+    # employees = Employee.all.order(:created_at)
+    employees = Employee.where.not(first: [nil, "Untitled"])
+    # employees.where.not(first: nil)
     # send them back as a JSON array
+    employees.to_json
+  end
+
+  post '/employees' do
+    # post all the employees from the database
+    employees = Employee.create(first: params[:first],  last: params[:last], email: params[:email], location: params[:location],)
+    # send them back as a JSON array
+    employees.to_json
+  end
+
+  patch '/employees/:id' do
+    # patch all the employees from the database
+    employees = Employee.find(params[:id])
+    # send them back as a JSON array
+    employees.update(first: params[:first])
+    employees.to_json
+  end
+
+  delete "/employees/:id" do
+    employees = Employee.find(params[:id])
+    employees.destroy
     employees.to_json
   end
 
