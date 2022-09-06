@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
     employees = Employee.create(first: params[:first],  
       last: params[:last], 
       email: params[:email], 
-      location: params[:location],
+      work_station: params[:work_station],
       phone: params[:phone],
       hobby: params[:hobby])
     # send them back as a JSON array
