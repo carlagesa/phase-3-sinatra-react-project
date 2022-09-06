@@ -26,13 +26,13 @@ class ApplicationController < Sinatra::Base
     employees.to_json
   end
 
-  # put '/employees/:id' do
-  #   # patch all the employees from the database
-  #   employees = Employee.find(params[:id])
-  #   # send them back as a JSON array
-  #   employees.update(body: params[:body])
-  #   employees.to_json
-  # end
+  patch '/employees/:id' do
+    # patch all the employees from the database
+    employees = Employee.find(params[:id])
+    # send them back as a JSON array
+    employees.update(body: params[:body])
+    employees.to_json
+  end
 
   delete "/employees/:id" do
     employees = Employee.find(params[:id])
