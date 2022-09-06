@@ -16,7 +16,12 @@ class ApplicationController < Sinatra::Base
 
   post '/employees' do
     # post all the employees from the database
-    employees = Employee.create(first: params[:first],  last: params[:last], email: params[:email], location: params[:location],)
+    employees = Employee.create(first: params[:first],  
+      last: params[:last], 
+      email: params[:email], 
+      location: params[:location],
+      phone: params[:phone],
+      hobby: params[:hobby])
     # send them back as a JSON array
     employees.to_json
   end
