@@ -6,7 +6,7 @@ Employee.create([
     last: "Agesa",
     email: "allofus@moringaschool.com",
     phone: "0723 345 878",
-    location: "Nairobi",
+    work_station: "Kitengela",
     hobby: "Watching TV"
   },
   {
@@ -14,7 +14,7 @@ Employee.create([
     last: "Akinyi",
     email: "allofus@moringaschool.com",
     phone: "0783 828 484",
-    location: "Nairobi",
+    work_station: "Ngong Rd",
     hobby: "Watching TV"
 
 
@@ -24,7 +24,7 @@ Employee.create([
     last: "Donald",
     email: "allofus@moringaschool.com",
     phone: "0983 873 388",
-    location: "Nairobi",
+    work_station: "Nairobi CBD",
     hobby: "Watching TV"
 
 
@@ -34,7 +34,7 @@ Employee.create([
     last: "Mbugua",
     email: "allofus@moringaschool.com",
     phone: "8938 983 798",
-    location: "Nairobi",
+    work_station: "Kajiado",
     hobby: "Watching TV"
 
 
@@ -44,7 +44,7 @@ Employee.create([
     last: "Njoro",
     email: "allofus@moringaschool.com",
     phone: "0987 783 738",
-    location: "Nairobi",
+    work_station: "Nairobi CBD",
     hobby: "Watching TV"
 
 
