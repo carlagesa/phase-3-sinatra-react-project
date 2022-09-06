@@ -5,8 +5,10 @@ class ApplicationController < Sinatra::Base
 
   get '/employees' do
     # get all the employees from the database
-    # employees = Employee.all.order(:created_at)
-    employees = Employee.where.not(first: [nil, "Untitled"])
+    employees = Employee.all.order(:created_at)
+    # employees = Employee.where.not(first: [nil, "Untitled"])
+    # Employee.where(first: [values]).delete_all
+    # Employee.where.not(first: 'Untiltled').where.not(first: 'nil')
     # employees.where.not(first: nil)
     # send them back as a JSON array
     employees.to_json
