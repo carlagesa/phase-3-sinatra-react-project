@@ -14,6 +14,17 @@ class ApplicationController < Sinatra::Base
     employees.to_json
   end
 
+  get '/team_leads' do
+    # get all the employees from the database
+    team_leads = TeamLead.all.order(:created_at)
+    # team_leads = Employee.where.not(first: [nil, "Untitled"])
+    # Employee.where(first: [values]).delete_all
+    # Employee.where.not(first: 'Untiltled').where.not(first: 'nil')
+    # team_leads.where.not(first: nil)
+    # send them back as a JSON array
+    team_leads.to_json
+  end
+
   post '/employees' do
     # post all the employees from the database
     employees = Employee.create(first: params[:first],  
