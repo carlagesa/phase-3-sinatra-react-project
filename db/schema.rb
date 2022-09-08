@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_06_153708) do
+ActiveRecord::Schema.define(version: 2022_09_08_130038) do
 
   create_table "employees", force: :cascade do |t|
     t.string "first", null: false
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_09_06_153708) do
     t.string "email"
     t.string "work_station"
     t.integer "phone"
-    t.string "hobby"
+    t.string "salary"
   end
 
   create_table "team_leads", force: :cascade do |t|
