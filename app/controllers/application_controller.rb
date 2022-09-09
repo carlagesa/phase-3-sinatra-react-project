@@ -37,6 +37,17 @@ class ApplicationController < Sinatra::Base
     employees.to_json
   end
 
+  post '/team_leads' do
+    # post all the employees from the database
+    team_leads = TeamLead.create(firstname: params[:firstname],  
+      lastname: params[:lastname], 
+      email: params[:email], 
+      work_station: params[:work_station],
+      phone: params[:phone])
+    # send them back as a JSON array
+    team_leads.to_json
+  end
+
   patch '/employees/:id' do
     # patch all the employees from the database
     employees = Employee.find(params[:id])
@@ -50,5 +61,5 @@ class ApplicationController < Sinatra::Base
     employees.destroy
     employees.to_json
   end
-
+  
 end

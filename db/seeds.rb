@@ -7,7 +7,7 @@ Employee.create([
     email: "allofus@moringaschool.com",
     phone: "0723345878",
     work_station: "Kitengela",
-    hobby: "Watching TV"
+    salary: "$9000"
   },
   {
     first: "Laureen",
@@ -15,7 +15,7 @@ Employee.create([
     email: "allofus@moringaschool.com",
     phone: "0783828484",
     work_station: "Ngong Rd",
-    hobby: "Watching TV"
+    salary: "$9000"
 
 
   },
@@ -25,7 +25,7 @@ Employee.create([
     email: "allofus@moringaschool.com",
     phone: "0983873388",
     work_station: "Nairobi CBD",
-    hobby: "Watching TV"
+    salary: "$9000"
 
 
   },
@@ -35,7 +35,7 @@ Employee.create([
     email: "allofus@moringaschool.com",
     phone: "8938983798",
     work_station: "Kajiado",
-    hobby: "Watching TV"
+    salary: "$9000"
 
 
   },
@@ -45,7 +45,7 @@ Employee.create([
     email: "allofus@moringaschool.com",
     phone: "0987783738",
     work_station: "Nairobi CBD",
-    hobby: "Watching TV"
+    salary: "$9000"
 
 
   }
