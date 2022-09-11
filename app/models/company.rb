@@ -1,4 +1,3 @@
 class Company < ActiveRecord::Base
- belongs_to :team_lead
- belongs_to :employee
+ has_many :employee
 end
